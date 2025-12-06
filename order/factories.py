@@ -11,7 +11,6 @@ class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = User
 
-
 class OrderFactory(factory.django.DjangoModelFactory):
     user = factory.SubFactory(UserFactory)
 

@@ -13,7 +13,6 @@ class CategoryFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Category
 
-
 class ProductFactory(factory.django.DjangoModelFactory):
     price = factory.Faker('pyint')
     category = factory.LazyAttribute(CategoryFactory)

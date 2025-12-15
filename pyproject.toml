@@ -1,26 +1,25 @@
-[project]
-name = "11-configurandodjangorestframework"
+[tool.poetry]
+name = "bookstore"
 version = "0.1.0"
 description = "Bookstore API"
-authors = [
-    {name = "monosodrac",email = "monosodrac@gmail.com"}
-]
-readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "django (>=5.2.7,<6.0.0)",
-    "djangorestframework (>=3.16.1,<4.0.0)",
-    "django-rest-framework (>=0.1.0,<0.2.0)",
-    "django-extensions (>=4.1,<5.0)",
-    "django-debug-toolbar (>=6.1.0,<7.0.0)"
-]
+authors = ["monosodrac <monosodrac@gmail.com>"]
 
-[dependency-groups]
-dev = [
-    "pytest (>=8.4.2,<9.0.0)",
-    "factory-boy (>=3.3.3,<4.0.0)"
-]
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+django = ">=5.2.7,<6.0.0"
+djangorestframework = ">=3.16.1,<4.0.0"
+django-rest-framework = ">=0.1.0,<0.2.0"
+django-extensions = ">=4.1,<5.0"
+django-debug-toolbar = ">=6.1.0,<7.0.0"
+psycopg2-binary = "^2.9.11"
+flake8 = "^7.3.0"
 
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.4.2,<9.0.0"
+factory-boy = ">=3.3.3,<4.0.0"
+black = "^25.12.0"
+isort = "^7.0.0"
+mypy = "^1.19.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

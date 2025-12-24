@@ -13,7 +13,7 @@ class OrderViewSet(ModelViewSet):
     serializer_class = OrderSerializer
     queryset = Order.objects.all().order_by("id")
 
-    authenticantion_classes = [
+    authentication_classes = [
         SessionAuthentication,
         BasicAuthentication,
         TokenAuthentication,

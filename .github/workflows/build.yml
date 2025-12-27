@@ -34,7 +34,6 @@ jobs:
 
     - name: Test
       env:
-          DJANGO_ALLOWED_HOSTS: ["localhost 127.0.0.1", "monosodrac.pythonanywhere.com"] 
           SECRET_KEY: "ipznvcfr+h9@03met)7_lci@k%c-zvf3hp-i1r+ozad!@cr&4l"
       run: |
         poetry run python manage.py test

@@ -6,7 +6,7 @@ jobs:
     name: Quality check
     runs-on: ubuntu-22.04
     env:
-      SECRET_KEY: 'sua_secret_key_aqui'
+      SECRET_KEY: '1&isax*@wnh%v((-&8m9ccyx%d2*k)pjgckjxrum(($k%rdga6'
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python
